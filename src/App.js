@@ -28,8 +28,8 @@ const App = () => {
   return (
     <>
         <ToastContainer />
-        {/* <Provider> */}
-          {/* <ProSidebarProvider> */}
+        <Provider>
+          <ProSidebarProvider>
             <BrowserRouter>
               <Routes>
                 <Route path='/' element={<Home />} />
@@ -49,8 +49,8 @@ const App = () => {
                 <Route path='/admin/edit/user/:id' element={<AdminRoute><Layout><EditUser /></Layout></AdminRoute>} />
               </Routes>
             </BrowserRouter>
-          {/* </ProSidebarProvider> */}
-        {/* </Provider> */}
+          </ProSidebarProvider>
+        </Provider>
         
     </>
   );
