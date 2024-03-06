@@ -15,7 +15,7 @@ const Menu = () => {
     } else if (path.startsWith('/services')) {
       setActiveMenu('service');
     } else if (path.startsWith('/projects')) {
-      setActiveMenu('project');
+      setActiveMenu('portfolio');
     } else if (path.startsWith('/contact-us')) {
       setActiveMenu('contact');
     } else {
@@ -30,29 +30,29 @@ const Menu = () => {
 
   return (
     <div>
-        <div className="mt-5 cursor-pointer text-black">
-            <nav className="space-x-8 hidden xs:hidden sm:hidden lg:flex text-center text-base font-inter text-md">
+        <div className="mt-3 cursor-pointer text-black">
+            <nav className="space-x-8 hidden lg:flex text-center text-base font-inter text-md">
               <div
                 onMouseEnter={() => handleMenuHover('aboutNav')}
                 onMouseLeave={() => handleMenuHover(null)}
                 >
-                <p className={`${(activeMenu === 'aboutNav' || activeMenu === 'about') ? 'text-blue-500' : 'text-white'} pb-3`}>About</p>
+                <p className={`${(activeMenu === 'aboutNav' || activeMenu === 'about') ? 'text-gray-500' : 'text-white'} pb-3`}>About</p>
                 {activeMenu === 'aboutNav' && (
                     <div className="absolute bg-white shadow text-left p-4 rounded-lg">
                     <ul>
-                        <Link to="/about-us/#weAre">
-                            <li className="hover:text-blue">
-                                <p>Who we are?</p>
+                        <Link to="/about-us/#about">
+                            <li className="hover:text-gray-500">
+                                <p>About Us</p>
                             </li>
                         </Link>
-                        <Link to="/about-us/#makesUnique">
-                            <li className="hover:text-blue py-5">
-                                <p>What makes us unique?</p>
+                        <Link to="/about-us/#approach">
+                            <li className="hover:text-gray-500 py-5">
+                                <p>Our Approach</p>
                             </li>
                         </Link>
-                        <Link to="/about-us/#ourTeam">
-                            <li className="hover:text-blue">
-                                <p>Meet the team!</p>
+                        <Link to="/about-us/#team">
+                            <li className="hover:text-gray-500">
+                                <p>Our Team</p>
                             </li>
                         </Link>
                     </ul>
@@ -63,28 +63,33 @@ const Menu = () => {
                     onMouseEnter={() => handleMenuHover('servicesNav')}
                     onMouseLeave={() => handleMenuHover(null)}
                 >
-                    <p className={`${(activeMenu === 'servicesNav' || activeMenu === 'service') ? 'text-blue-500' : 'text-white'} pb-3`}>Services</p>
+                    <p className={`${(activeMenu === 'servicesNav' || activeMenu === 'service') ? 'text-gray-500' : 'text-white'} pb-3`}>Services</p>
                     {activeMenu === 'servicesNav' && (
                     <div className="absolute bg-white shadow text-left p-4 rounded-lg">
                         <ul>
-                        <li className="hover:text-blue">
+                        <li className="hover:text-gray-500">
                             <Link to="/services#architectural">
                             <p>Architectural Design</p>
                             </Link>
                         </li>
-                        <li className="hover:text-blue pt-5">
+                        <li className="hover:text-gray-500 pt-5">
                             <Link to="/services/#interior">
                             <p>Interior Design</p>
                             </Link>
                         </li>
-                        <li className="hover:text-blue pt-5">
+                        <li className="hover:text-gray-500 pt-5">
                             <Link to="/services/#construction">
                             <p>Construction Works</p>
                             </Link>
                         </li>
-                        <li className="hover:text-blue pt-5">
+                        <li className="hover:text-gray-500 pt-5">
                             <Link to="/services/#finishing">
                             <p>Finishing Works</p>
+                            </Link>
+                        </li>
+                        <li className="hover:text-gray-500 pt-5">
+                            <Link to="/services/#supervission">
+                            <p>Constraction Supervission</p>
                             </Link>
                         </li>
                         </ul>
@@ -96,8 +101,8 @@ const Menu = () => {
                     onMouseEnter={() => handleMenuHover('portfolioNav')}
                     onMouseLeave={() => handleMenuHover(null)}
                 >
-                    <Link to="/projects">
-                        <p className={`${(activeMenu === 'portfolioNav' || activeMenu === 'projects') ? 'text-blue-500' : 'text-white'}`}>Portfolio</p>
+                    <Link to="/portfolio">
+                        <p className={`${(activeMenu === 'portfolioNav' || activeMenu === 'projects') ? 'text-gray-500' : 'text-white'}`}>Portfolio</p>
                     </Link>
                 </div>
 
@@ -106,14 +111,14 @@ const Menu = () => {
                     onMouseLeave={() => handleMenuHover(null)}
                 >
                     <Link to="/contact-us">
-                        <p className={`${(activeMenu === 'contactNav' || activeMenu === 'contact') ? 'text-blue-500' : 'text-white'}`}>Contact Us</p>
+                        <p className={`${(activeMenu === 'contactNav' || activeMenu === 'contact') ? 'text-gray-500' : 'text-white'}`}>Contact Us</p>
                     </Link>
                 </div>
 
                 <div className='flex gap-5 cursor-pointer text-white'>
-                    <a href='https://www.linkedin.com/in/lik-architects?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'><div className='cursor-pointer'><LinkedIn /></div></a>
-                    <a href='https://www.instagram.com/likawunt1?igsh=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr'><div className='cursor-pointer'><Instagram /></div> </a>
-                    <a href='mailto:Likawunt100@gmail.com'><div className='cursor-pointer'><Email /></div></a>
+                    <a href='https://www.linkedin.com/in/lik-architects?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'><div className='cursor-pointer hover:text-gray-500'><LinkedIn /></div></a>
+                    <a href='https://www.instagram.com/likawunt1?igsh=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr'><div className='cursor-pointer hover:text-gray-500'><Instagram /></div> </a>
+                    <a href='mailto:Likawunt100@gmail.com'><div className='cursor-pointer hover:text-gray-500'><Email /></div></a>
                 </div>
 
             </nav>

@@ -12,9 +12,12 @@ module.exports = {
       },
       backgroundImage: {
         'image': 'url(images/bg.jpg)',
+        'home': 'url(images/pixlr-image-3.png)',
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide'),
+  ],
 }
 

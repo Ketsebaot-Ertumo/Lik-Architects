@@ -2,6 +2,49 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+.custom-blur {
+  filter: blur(3px);
+}
+
+.text-container {
+  display: flex;
+}
+
+.letter {
+  opacity: 0;
+  animation: 0.5s linear infinite;
+  /* animation: slideIn 0.5s steps(1, end) infinite; */
+  /* animation: slideIn 0.5s ease-in-out forwards infinite; */
+  /* transition: opacity 0.5s ease infinite;  */
+}
+
+.letter.show {
+  opacity: 1;
+}
+
+/* @keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+} */
+
+
+.squares {
+  width: 10px;
+  height: 10px;
+  background-color: #a09d9d;
+  cursor: pointer;
+}
+
+.squares.active {
+  background-color: #3B6EB7;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

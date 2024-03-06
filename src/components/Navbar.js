@@ -22,11 +22,13 @@ function Navbar() {
 
   return (
     
-      <header className="flex items-center justify-between text-white px-5 sm:px-10 fixed z-40 bg-black-500 w-full">
-        <div className='flex items-center gap-5 cursor-pointer'>
-            <Link to='/'><img src={logo} className="w-10 h-10 sm:w-20 sm:h-20" alt="logo" /></Link>
-            <p className='hidden sm:flex hover:text-blue-500'>LIK ARCHITECTS</p>
-        </div>
+      <header className="flex items-center justify-between text-white px-5 sm:px-10 fixed z-40 bg-black-500 w-full h-[60px]">
+        <Link to='/'>
+          <div className='flex items-center gap-5'>
+            <img src={logo} className="w-10 h-10 sm:w-14 sm:h-14 hover:text-gray-500" alt="logo" />
+            <p className='hidden sm:flex'>LIK ARCHITECTS</p>
+          </div>
+        </Link>
 
         <MenuNav />
 
@@ -57,23 +59,23 @@ function Navbar() {
                         onMouseEnter={() => handleMenuHover('aboutNav')}
                         onMouseLeave={() => handleMenuHover(null)}
                       >
-                        <p className={`${activeMenu === 'aboutNav' ? 'text-blue-500' : 'text-black'} pb-3`}>About</p>
+                        <p className={`${activeMenu === 'aboutNav' ? 'text-gray-500' : 'text-black'} pb-3`}>About</p>
                         {activeMenu === 'aboutNav' && (
                           <div className="absolute bg-white shadow text-left p-4 rounded-lg ml-[-180px]">
                             <ul>
-                              <Link to="/about-us/#weAre">
+                              <Link to="/about-us/#about">
                                 <li className="hover:text-blue">
-                                  <p>Who we are?</p>
+                                  <p>About Us</p>
                                 </li>
                               </Link>
-                              <Link to="/about-us/#makesUnique">
+                              <Link to="/about-us/#approach">
                                 <li className="hover:text-blue py-5">
-                                  <p>What makes us unique?</p>
+                                  <p>Our Approach</p>
                                 </li>
                               </Link>
-                              <Link to="/about-us/#ourTeam">
+                              <Link to="/about-us/#team">
                                 <li className="hover:text-blue">
-                                    <p>Meet the team!</p>
+                                    <p>Our Team</p>
                                 </li>
                               </Link>
                             </ul>
@@ -85,7 +87,7 @@ function Navbar() {
                           onMouseEnter={() => handleMenuHover('servicesNav')}
                           onMouseLeave={() => handleMenuHover(null)}
                         >
-                          <p className={`${activeMenu === 'servicesNav' ? 'text-blue-500' : 'text-black'} pb-3`}>Services</p>
+                          <p className={`${activeMenu === 'servicesNav' ? 'text-gray-500' : 'text-black'} pb-3`}>Services</p>
                           {activeMenu === 'servicesNav' && (
                             <div className="absolute bg-white shadow text-left p-4 rounded-lg ml-[-160px]">
                               <ul>
@@ -109,6 +111,11 @@ function Navbar() {
                                   <p>Finishing Works</p>
                                 </Link>
                               </li>
+                              <li className="hover:text-blue pt-5">
+                                <Link to="/services/#supervission">
+                                  <p>Construction Supervission</p>
+                                </Link>
+                              </li>
                               </ul>
                             </div>
                           )}
@@ -118,14 +125,14 @@ function Navbar() {
                     onMouseEnter={() => handleMenuHover('portfolioNav')}
                     onMouseLeave={() => handleMenuHover(null)}
                   >
-                      <Link to="/projects"><p className={`${activeMenu === 'portfolioNav' ? 'text-blue-500' : 'text-black'} pb-3`}>Portfolio</p></Link>
+                      <Link to="/portfolio"><p className={`${activeMenu === 'portfolioNav' ? 'text-gray-500' : 'text-black'} pb-3`}>Portfolio</p></Link>
                   </div>
 
                   <div 
                     onMouseEnter={() => handleMenuHover('contactNav')}
                     onMouseLeave={() => handleMenuHover(null)}
                   >
-                      <Link to="/contact-us"><p className={`${activeMenu === 'contactNav' ? 'text-blue' : 'text-black'}`}>Contact Us</p></Link>
+                      <Link to="/contact-us"><p className={`${activeMenu === 'contactNav' ? 'text-gray-500' : 'text-black'}`}>Contact Us</p></Link>
                   </div>
 
             </div>
@@ -133,20 +140,6 @@ function Navbar() {
 
         </div>
         </div>
-        
-        {/* <nav className='hidden sm:flex justify-center gap-10 cursor-pointer'>
-            <p>About</p>
-            <p>Services</p>
-            <p>Portfolio</p>
-            <p>Contact-Us</p>
-            <div className='flex gap-5 cursor-pointer'>
-              <a href='https://www.linkedin.com/in/lik-architects?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'><div className='cursor-pointer'><LinkedIn /></div></a>
-              <a href='https://www.instagram.com/likawunt1?igsh=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr'><div className='cursor-pointer'><Instagram /></div> </a>
-              <a href='mailto:Likawunt100@gmail.com'><div className='cursor-pointer'><Email /></div></a>
-            </div>
-        </nav> */}
-
-        {/* <div className='sm:hidden cursor-pointer'><Menu /></div> */}
        
         
       </header>
