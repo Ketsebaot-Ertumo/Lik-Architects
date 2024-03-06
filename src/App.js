@@ -8,7 +8,11 @@ import { Provider } from 'react-redux';
 import Contact from './pages/Contact'
 import Projects from './pages/Potfolio';
 import Services from './pages/Services';
-import { LogIn , Registration, Confirmation, Forgot, Reset } from './pages/auth';
+import LogIn from './pages/auth';
+import Confirmation from './pages/auth/Confirm';
+import Forgot from './pages/auth/Forgot';
+import Reset from './pages/auth/Reset';
+import Registration from './pages/auth/Register';
 import Layout from './components/Layout';
 import AdminRoute from './components/Routes/AdminRoute';
 import AdminDashboard from './pages/admin/portfolio/AdminDashboard';
@@ -16,10 +20,7 @@ import CreateProject from './pages/admin/portfolio/CreateProject';
 import EditProject from './pages/admin/portfolio/EditProject';
 import Users from './pages/admin/user/Users';
 import EditUser from './pages/admin/user/EditUser';
-// import Confirmation from './pages/auth/Confirm';
-// import Forgot from './pages/auth/Forgot';
-// import Reset from './pages/auth/Reset';
-// import Registration from './pages/auth/Register';
+
 
 
 
