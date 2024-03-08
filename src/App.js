@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import Contact from './pages/Contact'
 import Projects from './pages/Potfolio';
 import Services from './pages/Services';
-import LogIn from './pages/auth';
+import LogIn from './pages/auth/Login';
 import Confirmation from './pages/auth/Confirm';
 import Forgot from './pages/auth/Forgot';
 import Reset from './pages/auth/Reset';
