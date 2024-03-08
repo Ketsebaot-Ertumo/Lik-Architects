@@ -22,7 +22,7 @@ function Navbar() {
 
   return (
     
-      <header className="flex items-center justify-between text-white px-5 sm:px-10 fixed z-40 bg-black-500 w-full h-[60px]">
+      <header className="flex items-center justify-between text-white px-5 sm:px-10 fixed z-40 bg-black-500 w-full h-[44px] md:h-[60px]">
         <Link to='/'>
           <div className='flex items-center gap-5'>
             <img src={logo} className="w-10 h-10 sm:w-14 sm:h-14 hover:text-gray-500" alt="logo" />
