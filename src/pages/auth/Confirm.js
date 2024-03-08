@@ -6,8 +6,8 @@ import {useFormik} from 'formik';
 import * as yup from "yup";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { confirmEmail } from "../redux/actions/userAction";
-import Navbar from "../components/Navbar";
+import { confirmEmail } from "../../redux/actions/userAction";
+import Navbar from "../../components/Navbar";
 import { Box, CircularProgress,} from "@mui/material";
 
 

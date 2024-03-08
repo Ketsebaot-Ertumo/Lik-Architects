@@ -6,11 +6,11 @@ import {useFormik} from 'formik';
 import * as yup from "yup";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { forgot } from "../redux/actions/userAction";
-import Navbar from "../components/Navbar";
+import { forgot } from "../../redux/actions/userAction";
+import Navbar from "../../components/Navbar";
 import { Avatar, Box, CircularProgress,} from "@mui/material";
-import Footer from "../components/Footer";
-import Loader from "../components/Loader";
+import Footer from "../../components/Footer";
+import Loader from "../../components/Loader";
 import { Lock, Security } from "@mui/icons-material";
 
 

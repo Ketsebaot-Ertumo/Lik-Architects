@@ -6,8 +6,8 @@ import {useFormik} from 'formik';
 import * as yup from "yup";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { userSignUpAction } from "../redux/actions/userAction";
-import Navbar from "../components/Navbar";
+import { userSignUpAction } from "../../redux/actions/userAction";
+import Navbar from "../../components/Navbar";
 import { Avatar, Box, CircularProgress, IconButton, InputAdornment,} from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 
