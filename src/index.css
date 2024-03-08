@@ -2,6 +2,12 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@media (min-width: 1445px) {
+  .xxl-pt {
+    padding: 0 74px !important;
+  }
+}
+
 .custom-blur {
   filter: blur(3px);
 }

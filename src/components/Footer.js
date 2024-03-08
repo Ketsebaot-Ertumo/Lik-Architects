@@ -69,7 +69,7 @@ const Footer = () => {
 
             </div>
 
-            <div className="text-center sm:text-right text-white text-opacity-40 md:text-lg font-normal font-['Inter'] sm:mr-20 py-5 sm:py-10">
+            <div className="text-center sm:text-right text-white text-opacity-40 md:text-lg font-normal font-['Inter'] sm:mr-20 pt-5 pb-8 sm:py-10">
                 <p>©<span>{new Date().getFullYear()}</span> Lik Architects. All rights reserved.</p>
             </div>
 

@@ -39,7 +39,9 @@ function About() {
                 <div className="absolute text-4xl md:text-6xl top-0 bg-black bg-opacity-40 text-white w-full h-full pt-24 md:pt-44 text-center">Get to Know Us<br/>Better</div>
             </div> 
             
-        <div className="bg-gray-300 text-black">
+        <div className="bg-gray-300 text-black xxl-pt">
+
+        <div className="xxl-pt" >
 
             <div className="p-5 pt-10 md:p-10 md:pt-20 text-lg text-justify md:text-left tracking-tight" id="about">
               <p className="text-4xl sm:text-6xl pb-10 md:w-[30%] text-center md:text-left">About Us</p>
@@ -48,11 +50,11 @@ function About() {
                   <p className="md:w-[600px]">We are a renowned architectural firm dedicated to creating innovative and inspiring spaces. With a passion for design excellence and a strong commitment to client satisfaction, our mission is to transform your vision into a remarkable reality. At Lik Architects, we believe that exceptional architecture goes beyond the physical structures; it has the power to shape experiences, evoke emotions, and improve lives. Our talented team of architects and designers combines creativity, expertise, and attention to detail to deliver unique and tailored solutions for each project.</p>
                   <p className="md:pl-10 pt-5 md:w-[600px]">Our team will guide you through the entire project, ensuring high-quality implementation and attention to detail. We combine technical expertise with artistic vision to create functional and impressive spaces. Our focus on innovation, sustainability, and client satisfaction sets us apart as a trusted partner in architecture. Experience the Lik Architects difference and bring your vision to life.</p>
                 </div>
-                  <img className="md:w-[40%] rounded-lg pt-5 md:pt-0" src={bg1} alt="About-Us" />
+                  <img className="md:w-[40%] rounded-lg pt-5 '\md:pt-0" src={bg1} alt="About-Us" />
               </div>
             </div>
 
-            <div id="Mission" className="text-lg p-10 pb-20 sm:px-40 bg-black-500 text-white text-center sm:text-lg">
+            <div id="Mission" className="text-lg px-5 py-10 pb-20 md:px-40 bg-black-500 text-white md:text-center text-justify sm:text-lg">
               <p className="text-2xl sm:text-3xl py-5">Mission</p>
               <p>Provide innovative, efficient and sustainable solutions through exceptional client service, excellence in Architectural Design and ethics in practice.</p>
             </div>
@@ -85,8 +87,10 @@ function About() {
             <div className="flex bg-gray-300 justify-center items-center py-10 md:py-20 px-10 md:px-0 font-[Inter]">
                 <Link to="/contact-us"><button className="text-center bg-green-400 text-white rounded-md w-48 md:w-60 h-10 font-dm-serif-text md:text-2xl">Contact Us</button></Link>
             </div>
-            
-            <Footer />
+
+          </div>    
+
+          <Footer />
             
         </div>
 

@@ -1,7 +1,7 @@
 // import logo from './logo.jpg';
 import { Link } from 'react-router-dom';
 import logo from '../likLogo.png';
-import { Close, Email, Instagram, LinkedIn, Menu } from '@mui/icons-material';
+import { Close, Menu } from '@mui/icons-material';
 import MenuNav from './Menu';
 import { IconButton } from '@mui/material';
 import { useState } from 'react';
@@ -35,7 +35,7 @@ function Navbar() {
         <div className="lg:hidden">
 
           <div
-              className="pr-8 mt-2"
+              className="pr-8"
               onClick={handleNavMenu}
             >
               <Menu className='lg:mb-3' />
