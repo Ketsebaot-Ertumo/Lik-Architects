@@ -28,7 +28,7 @@ const App = () => {
   return (
     <>
         <ToastContainer />
-        <Provider>
+        {/* <Provider> */}
           <ProSidebarProvider>
             <BrowserRouter>
               <Routes>
@@ -50,7 +50,7 @@ const App = () => {
               </Routes>
             </BrowserRouter>
           </ProSidebarProvider>
-        </Provider>
+        {/* </Provider> */}
         
     </>
   );
